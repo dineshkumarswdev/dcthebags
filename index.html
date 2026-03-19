@@ -53,8 +53,8 @@
 
         
         <div class="hidden md:flex space-x-10 text-xs font-semibold uppercase tracking-widest">
-            <a href="#products" class="hover:text-brand-gold transition-colors">Collection</a>
-            <a href="#vision" class="hover:text-brand-gold transition-colors">Vision</a>
+		    <a href="#vision" class="hover:text-brand-gold transition-colors">Vision</a>
+            <a href="#products" class="hover:text-brand-gold transition-colors">Collection</a>            
             <a href="#contact" class="hover:text-brand-gold transition-colors">Contact</a>
         </div>
 
@@ -67,8 +67,8 @@
     </div>
 
     <div x-show="mobileMenu" x-cloak @click.away="mobileMenu = false" class="md:hidden bg-white border-t px-6 py-6 space-y-4 text-center">
-        <a href="#products" @click="mobileMenu = false" class="block text-xs font-bold uppercase tracking-widest">Collection</a>
-        <a href="#vision" @click="mobileMenu = false" class="block text-xs font-bold uppercase tracking-widest">Vision</a>
+	    <a href="#vision" @click="mobileMenu = false" class="block text-xs font-bold uppercase tracking-widest">Vision</a>
+        <a href="#products" @click="mobileMenu = false" class="block text-xs font-bold uppercase tracking-widest">Collection</a>        
         <a href="#contact" @click="mobileMenu = false" class="block text-xs font-bold uppercase tracking-widest">Contact</a>
     </div>
 </nav>
@@ -117,6 +117,49 @@
 </header>
 
 <main>
+<section id="motto" class="pt-32 pb-0 bg-brand-dark text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-brand-gold text-sm font-bold uppercase tracking-widest mb-6">Our Company Motto</h2>
+            <h3 class="text-1xl md:text-1xl font-serif italic mb-12">"Quality products at Indian prices, Service level at European standard " This is the Basic Principle, of
+two experience people, who came together to form Divine Creations Leather Bags & Accessories.Based upon the experience in the development and production of various leather products such as
+Belts, Bags, Wallets, Purses and other Accessories by one partner. Combining experience and marketing of our products along with a strong knowledge of the sourcing of raw materials by the other, formed the basis of this venture, and challenged to get this company started.</h3>
+
+<h3 class="text-1xl md:text-1xl font-serif italic mb-12">As an independent partnership company. We strive to serve our customers around the world,comforting them with a high degree of customer satisfaction and service with the ability to transformcustomer requirements into fashionable products.</h3>
+
+<h3 class="text-1xl md:text-1xl font-serif italic mb-12">The outcome of this principle is our valued customers. Our focus is to provide quality leather products,for teens and young and old fashion-conscious people. The products we produce are distressed, second hand, Vintage and high-end fashion and are dressing to suit every type of wear. Our products go very well with denim and contemporary garments.</h3>
+
+<h3 class="text-1xl md:text-1xl font-serif italic mb-12">Although casual-looking, each item highlights its quality in all details to coincide with the use of different leathers and finishes along with high quality metal trims, to give the desired look of distressed, second-hand, vintage and washed effects, combined with carefully embossed branded logos, as required by our customers.Divine Creations is mainly producing for private labels and big retail chain stores and organizations that can reap high benefits of buying straight from the source to gain high profitability.Our customers are our proof, as we are committed to our motto."</h3>
+
+            <div class="grid md:grid-cols-3 gap-12 text-left border-t border-white/10 pt-16">
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class=" scroll-mt-24 pb-12 bg-brand-dark text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <h2 class="text-brand-gold text-sm font-bold uppercase tracking-widest mb-6">Our Vision</h2>
+            <h3 class="text-1xl md:text-1xl font-serif italic mb-12">We take pride in presenting Divine Creations Leather Bags & Accessories, a company that specializes in
+providing a range of Customized leather products and accessories. Combining the old and antiquity to present day fashion, to give you timeless models that can be transformed to a product of great value and give that special look so desired by many, our tireless endeavor and vigor along with endless commitment to Customer satisfaction, has been the secret of our success.</h3>
+
+<h3 class="text-1xl md:text-1xl font-serif italic mb-12">This can be seen in our wide range of products. All our products are made from Re-tanned vegetable leathers. We make sure that our products are manufactured as per international standards and present-day norms, combined with high quality metal trims and metal accessories.Our expert team has the ability to understand the needs and requirements of our customers and deliver according to their requirements. From sample requests to Mass production, we strive to give our customers the best; our products are embellished and prepared as per the creativity and desire of our customers. Our objective is to provide the best quality customized leather and products to all our customers at competitive prices.</h3>
+
+<h3 class="text-1xl md:text-1xl font-serif italic mb-12">We love to maintain a cordial and fruitful business relationship with all our customers. We have a dedicated team to answer to their queries and needs, keeping in mind the present day requirements. We have priced our range of products competitively to make it easy and affordable to all. We follow transparent and sensible business policies, which have made us successful in winning the trust and confidence of our customers. We are proud to say that in the past years we have been able to build a strong and lasting business relationship with all our customers consisting of major brands, and big buying houses, around the world. We are open to criticism as this helps us improve our areas of negligence, and to work closely with our clients. In building a strong relationship.</h3>
+            <div class="grid md:grid-cols-3 gap-12 text-left border-t border-white/10 pt-16">
+                <div>
+                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand-gold">Premium Materials</h5>
+                    <p class="text-gray-400 text-sm leading-relaxed">Re-tanned vegetable leathers combined with premium metal trims and accessories.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand-gold">Custom Design</h5>
+                    <p class="text-gray-400 text-sm leading-relaxed">Tailored precisely to customer requirements from sample development to mass production.</p>
+                </div>
+                <div>
+                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand-gold">Global Reach</h5>
+                    <p class="text-gray-400 text-sm leading-relaxed">Trusted partners for private labels and large retail chains worldwide.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="products" class="py-32 bg-white" x-data="productGallery()">
         <div class="max-w-7xl mx-auto px-6">
             <div class="text-center mb-16">
@@ -154,49 +197,7 @@
         </div>
     </section>
 
-<section id="motto" class="pt-32 pb-0 bg-brand-dark text-white">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h2 class="text-brand-gold text-sm font-bold uppercase tracking-widest mb-6">Our Company Motto</h2>
-            <h3 class="text-1xl md:text-1xl font-serif italic mb-12">"Quality products at Indian prices, Service level at European standard " This is the Basic Principle, of
-two experience people, who came together to form Divine Creations Leather Bags & Accessories.Based upon the experience in the development and production of various leather products such as
-Belts, Bags, Wallets, Purses and other Accessories by one partner. Combining experience and marketing of our products along with a strong knowledge of the sourcing of raw materials by the other, formed the basis of this venture, and challenged to get this company started.</h3>
 
-<h3 class="text-1xl md:text-1xl font-serif italic mb-12">As an independent partnership company. We strive to serve our customers around the world,comforting them with a high degree of customer satisfaction and service with the ability to transformcustomer requirements into fashionable products.</h3>
-
-<h3 class="text-1xl md:text-1xl font-serif italic mb-12">The outcome of this principle is our valued customers. Our focus is to provide quality leather products,for teens and young and old fashion-conscious people. The products we produce are distressed, second hand, Vintage and high-end fashion and are dressing to suit every type of wear. Our products go very well with denim and contemporary garments.</h3>
-
-<h3 class="text-1xl md:text-1xl font-serif italic mb-12">Although casual-looking, each item highlights its quality in all details to coincide with the use of different leathers and finishes along with high quality metal trims, to give the desired look of distressed, second-hand, vintage and washed effects, combined with carefully embossed branded logos, as required by our customers.Divine Creations is mainly producing for private labels and big retail chain stores and organizations that can reap high benefits of buying straight from the source to gain high profitability.Our customers are our proof, as we are committed to our motto."</h3>
-
-            <div class="grid md:grid-cols-3 gap-12 text-left border-t border-white/10 pt-16">
-            </div>
-        </div>
-    </section>
-
-    <section id="vision" class="pb-12 bg-brand-dark text-white">
-        <div class="max-w-5xl mx-auto px-6 text-center">
-            <h2 class="text-brand-gold text-sm font-bold uppercase tracking-widest mb-6">Our Vision</h2>
-            <h3 class="text-1xl md:text-1xl font-serif italic mb-12">We take pride in presenting Divine Creations Leather Bags & Accessories, a company that specializes in
-providing a range of Customized leather products and accessories. Combining the old and antiquity to present day fashion, to give you timeless models that can be transformed to a product of great value and give that special look so desired by many, our tireless endeavor and vigor along with endless commitment to Customer satisfaction, has been the secret of our success.</h3>
-
-<h3 class="text-1xl md:text-1xl font-serif italic mb-12">This can be seen in our wide range of products. All our products are made from Re-tanned vegetable leathers. We make sure that our products are manufactured as per international standards and present-day norms, combined with high quality metal trims and metal accessories.Our expert team has the ability to understand the needs and requirements of our customers and deliver according to their requirements. From sample requests to Mass production, we strive to give our customers the best; our products are embellished and prepared as per the creativity and desire of our customers. Our objective is to provide the best quality customized leather and products to all our customers at competitive prices.</h3>
-
-<h3 class="text-1xl md:text-1xl font-serif italic mb-12">We love to maintain a cordial and fruitful business relationship with all our customers. We have a dedicated team to answer to their queries and needs, keeping in mind the present day requirements. We have priced our range of products competitively to make it easy and affordable to all. We follow transparent and sensible business policies, which have made us successful in winning the trust and confidence of our customers. We are proud to say that in the past years we have been able to build a strong and lasting business relationship with all our customers consisting of major brands, and big buying houses, around the world. We are open to criticism as this helps us improve our areas of negligence, and to work closely with our clients. In building a strong relationship.</h3>
-            <div class="grid md:grid-cols-3 gap-12 text-left border-t border-white/10 pt-16">
-                <div>
-                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand-gold">Premium Materials</h5>
-                    <p class="text-gray-400 text-sm leading-relaxed">Re-tanned vegetable leathers combined with premium metal trims and accessories.</p>
-                </div>
-                <div>
-                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand-gold">Custom Design</h5>
-                    <p class="text-gray-400 text-sm leading-relaxed">Tailored precisely to customer requirements from sample development to mass production.</p>
-                </div>
-                <div>
-                    <h5 class="font-bold mb-4 uppercase text-xs tracking-widest text-brand-gold">Global Reach</h5>
-                    <p class="text-gray-400 text-sm leading-relaxed">Trusted partners for private labels and large retail chains worldwide.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 </main>
 
 <footer id="contact" class="bg-brand-cream py-20 border-t border-black/5">
